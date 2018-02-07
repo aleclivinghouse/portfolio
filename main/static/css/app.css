@@ -1,0 +1,40 @@
+
+.pic-row {
+  margin-top: 50px;
+}
+
+.pic {
+  margin-left: 5px;
+}
+
+.text-col {
+  margin-top: -30px;
+}
+
+
+.resume-button {
+    padding-top: 50px;
+}
+
+div.row.card-row {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+input.waves-light.btn.form-btn {
+   margin-top: 25px;
+  text-align: center;
+}
+
+.submit-container{
+  margin: auto;
+}
+
+.space-block {
+  margin: 30px;
+}
+
+.rc-anchor.rc-anchor-normal.rc-anchor-light{
+     margin-top: 30px;
+     margin: auto;
+}

@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}"></link>
+ <link rel="stylesheet" href="{% static 'css/app.css' %}"></link>
+ <link rel="stylesheet" href="{% static 'js/materialize.min.js' %}"></link>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body class=" deep-purple lighten-5 ">
+    <nav>
+   <div class="nav-wrapper deep-purple darken-3">
+     <a href="#" class="brand-logo center">Alec Livinghouse</a>
+     <ul id="nav-mobile" class="left hide-on-med-and-down">
+     </ul>
+   </div>
+ </nav>
+
+
+ <div>
+
+   <div class="row pic-row">
+         <div class="col s4">
+             <img  width="350" src="{% static 'images/web-pic.jpg' %}" class="pic">
+         </div>
+         <div class="col s1"></div>
+         <div class="col s7 text-col left-align">
+
+            <h1 class="grey-text">About Me</h1>
+            <h4 class="left-align grey-text">I am a passionate young full stack web developer graduating from UC Santa Cruz in 2018. I have attended Coding Dojo development bootcamp and am trained in several different stacks.</h4>
+          <a href="https://docs.google.com/document/d/1njzUt_pNqUMplezhYdqPPqbwoZcwJZnGa7O8_-5rUzQ/edit?usp=sharing" class="waves-effect waves-light btn">Resume</a>
+         </div>
+       </div>
+
+
+
+      <div class="row card-row  indigo lighten-4">
+          {% for post in the_posts %}
+        <div class="col s4">
+
+          <div class="card  deep-purple lighten-5">
+            <div class="card-content grey-text">
+              <span class="card-title">{{post.name}}</span>
+              <p>{{post.description}}</p>
+            </div>
+            <div class="card-action  teal lighten-2">
+              <a href="{{post.link}}">link</a>
+            </div>
+          </div>
+
+        </div>
+          {% endfor %}
+      </div>
+      <!-- card row end -->
+<div class="container">
+  <div class="container">
+    <h1 class="center-align grey-text">Contact</h1>
+    {% if title != None %}
+    <h3 class="center-align grey-text">{{title}}</h3>
+    <p class="center-align grey-text">{{confirm_message}}</p>
+    {% endif %}
+<div class="form-wrapper ">
+      <form id='contactus' action='' method='POST' accept-charset='UTF-8'>
+      {% csrf_token %}
+      {{form}}
+      <input type="submit" value="submit" class="waves-light btn form-btn"/>
+      </div>
+      </form>
+  </div>
+</div>
+
+
+
+ </div>
+ </div>
+</body>
