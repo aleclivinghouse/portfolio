@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'aleclivinghouse@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_HOST_PASSWORD = 'Voodoo12'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 #
@@ -30,9 +30,9 @@ GOOGLE_RECAPTCHA_SECRET_KEY = '6LdzUDgUAAAAAE8_I0Q266yOKC7INpriLQo9q-JF'
 SECRET_KEY = '$*+pyjha2^+0%1jo(#j!gtn#@25b3p*m!qhu=j5x#%1izt7))2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio-livinghouse.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
