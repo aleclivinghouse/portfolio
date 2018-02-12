@@ -16,8 +16,8 @@ from django.views.generic import View
 def home(request):
     form = contactForm(request.POST or None)
     posts = portPiece.objects.all();
-    confirm_message = None
-    title = None
+    confirm_message = ""
+    title =""
     if form.is_valid():
         name = form.cleaned_data['name']
         comment = form.cleaned_data['comment']
