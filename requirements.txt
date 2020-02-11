@@ -10,7 +10,7 @@ chardet==3.0.4
 colorama==0.3.7
 cryptography==2.0.3
 dj-database-url==0.4.2
-Django==1.11.4
+Django==1.11.28
 django-allauth==0.33.0
 docker-py==1.7.2
 dockerpty==0.4.1
