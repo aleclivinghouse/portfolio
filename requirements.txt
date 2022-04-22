@@ -33,7 +33,7 @@ psycopg2==2.7.3.2
 pyasn1==0.3.7
 pycparser==2.18
 pyOpenSSL==17.3.0
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 python-dateutil==2.6.1
 python-openid==2.2.5
 pytz==2017.2
